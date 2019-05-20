@@ -1,0 +1,79 @@
+article {
+  position: relative;
+  .flex(column, space-between, center);
+
+  .svg-container {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    svg {
+      width: 100%;
+      height: 100%;
+      filter: drop-shadow(4px 9px 3px rgba(0, 0, 0, 0.25));
+    }
+  }
+
+  .article-container {
+    .flex(row, space-between, center);
+    .space(12rem 8rem 0rem 8rem, 0 auto);
+
+    div.reverse {
+      order: 2;
+    }
+
+    img.reverse {
+      order: 1;
+    }
+
+    .text-content {
+      .flex(column, center, center);
+      .space (0.5rem 2rem, 0 auto);
+      font-size: 1.2rem;
+      line-height: 2.5rem;
+      width: 40%;
+
+      h3 {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
+
+.svg-container-end {
+  background-color: @purple;
+  height: 100%;
+  width: 100%;
+  svg {
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(4px 9px 3px rgba(0, 0, 0, 0.25));
+  }
+}
+
+article[data-article="1"] {
+  .colors(@white, @purple);
+  button {
+    .button-style(@orange, @white);
+  }
+}
+
+article[data-article="2"] {
+  .colors(@orange, @white);
+  button {
+    .button-style(@blue, @white);
+  }
+}
+
+article[data-article="3"] {
+  .colors(@white, @purple);
+  button {
+    .button-style(@orange, @white);
+  }
+}
+
+article[data-article="4"] {
+  .colors(@blue, @white);
+  button {
+    .button-style(@pink, @white);
+  }
+}
