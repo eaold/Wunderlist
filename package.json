@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/EmilyAbrahart/Wunderlist#readme",
   "dependencies": {
-    "less": "^3.9.0"
+    "less": "^3.9.0",
+    "less-watch-compiler": "^1.13.0"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
