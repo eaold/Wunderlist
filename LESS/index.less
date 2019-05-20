@@ -11,8 +11,8 @@ body {
   background-color: @purple;
 
   img {
-      width: 50%;
-      max-height: 80%;
+    width: 50%;
+    max-height: 80%;
   }
 
   h1,
@@ -30,13 +30,16 @@ body {
     margin-bottom: 0;
     margin-top: 2rem;
     font-weight: normal;
+
+    @media @mobile {
+      font-size: 5rem;
+    }
   }
 
   a {
     text-decoration: none;
     color: @white;
   }
-
 
   .container {
     .flex(column, center, center);
@@ -62,10 +65,14 @@ body {
           width: 6rem;
           margin: 0 2rem;
         }
+        @media @mobile {
+          .flex(column, center, center);
+          width: 80%;
+        }
       }
     }
     .main-content {
-        .flex(column, space-evenly, center);
+      .flex(column, space-evenly, center);
     }
   }
 }

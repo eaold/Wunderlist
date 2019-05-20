@@ -25,3 +25,26 @@ nav {
     .space(0.5rem 2rem, 0 1rem);
   }
 }
+
+  @media @mobile {
+    nav {
+      display: none;
+    }
+    .flex(column, center, center);
+    .nav-links {
+      .flex(column, center, center);
+    }
+    .nav-links-buttons {
+      .flex(column, center, center);
+    }
+    .nav-links-login {
+      .space(0.5rem 2.5rem, 1rem);
+      width: 60%;
+      text-align: center;
+    }
+    .nav-links-signup {
+      .space(0.5rem 2.5rem, 1rem);
+      width: 60%;
+      text-align: center;
+    }
+  }
