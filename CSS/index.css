@@ -1,0 +1,14 @@
+body {
+  font-size: 10px;
+  font-family: 'Nunito', sans-serif;
+}
+body h1,
+body h2,
+body h3,
+body h4 {
+  font-family: 'Lobster Two', cursive;
+}
+body a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
