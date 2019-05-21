@@ -25,36 +25,34 @@ nav {
 
     .logo {
       font-family: @accentFont;
-      
     }
   }
 
   .nav-links {
     .flex(row, space-between, baseline);
-   
+
     a:hover {
       border-top: 0.3rem solid @blue;
       transition-timing-function: ease-out;
       transition: 0.25s;
-  } 
+    }
   }
 
   .nav-links-login {
     color: @orange;
-    
   }
 
   .nav-links-signup {
     color: @pink;
-    
   }
 }
 
-  @media @tablet {
-    nav {
-      display: none;
-    }
+@media @tablet {
+  nav {
     .flex(column, center, center);
+    display: none;
+
+
     .nav-links {
       .flex(column, center, center);
     }
@@ -72,3 +70,4 @@ nav {
       text-align: center;
     }
   }
+}

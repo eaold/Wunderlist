@@ -370,31 +370,31 @@ nav .nav-links-signup {
 }
 @media (max-width: 1000px) {
   nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     display: none;
   }
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  .nav-links {
+  nav .nav-links {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .nav-links-buttons {
+  nav .nav-links-buttons {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .nav-links-login {
+  nav .nav-links-login {
     padding: 0.5rem 2.5rem;
     margin: 1rem;
     width: 60%;
     text-align: center;
   }
-  .nav-links-signup {
+  nav .nav-links-signup {
     padding: 0.5rem 2.5rem;
     margin: 1rem;
     width: 60%;
