@@ -9,70 +9,73 @@ body {
   font-size: 10px;
   font-family: @mainFont;
   background-color: @purple;
+}
+.container {
+  width: 100%;
+}
 
-  img {
-    width: 50%;
-    max-height: 80%;
+img {
+  width: 50%;
+  max-height: 80%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: @accentFont;
+}
+
+h1 {
+  color: @white;
+  font-size: 8rem;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 0;
+  margin-top: 2rem;
+  font-weight: normal;
+
+  @media @mobile {
+    font-size: 5rem;
   }
+}
 
-  h1,
-  h2,
-  h3,
-  h4 {
-    font-family: @accentFont;
-  }
+a {
+  text-decoration: none;
+  color: @white;
+}
 
-  h1 {
-    color: @white;
-    font-size: 8rem;
-    text-align: center;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-bottom: 0;
-    margin-top: 2rem;
-    font-weight: normal;
+.container {
+  .flex(column, center, center);
+  margin: 0 auto;
 
-    @media @mobile {
-      font-size: 5rem;
+  .cta {
+    .flex(column, space-evenly, center);
+
+    p {
+      color: @white;
+      font-size: 2.4rem;
+      margin: 1rem 0 1rem 0;
     }
-  }
-
-  a {
-    text-decoration: none;
-    color: @white;
-  }
-
-  .container {
-    .flex(column, center, center);
-    margin: 0 auto;
-
-    .cta {
-      .flex(column, space-evenly, center);
-
-      p {
-        color: @white;
-        font-size: 2.4rem;
-        margin: 1rem 0 1rem 0;
+    .cta-buttons {
+      .flex(row, space-evenly, center);
+      font-size: 1.2rem;
+      .cta-signup {
+        .button-style(@pink, @white);
+        margin: 0 0.5rem;
       }
-      .cta-buttons {
-        .flex(row, space-evenly, center);
-        font-size: 1.2rem;
-        .cta-signup {
-          .button-style(@pink, @white);
-          margin: 0 0.5rem;
-        }
-        .cta-login {
-          .button-style(@orange, @white);
-          width: 6rem;
-          margin: 0 2rem;
-        }
-        @media @mobile {
-          .flex(column, center, center);
-          width: 80%;
-        }
+      .cta-login {
+        .button-style(@orange, @white);
+        width: 6rem;
+        margin: 0 2rem;
+      }
+      @media @mobile {
+        .flex(column, center, center);
+        width: 80%;
       }
     }
-    .main-content {
-      .flex(column, space-evenly, center);
-    }
+  }
+  .main-content {
+    .flex(column, space-evenly, center);
   }
 }

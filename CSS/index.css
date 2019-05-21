@@ -4,18 +4,26 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  margin: 1rem;
+  margin: 1rem 0;
   font-size: 0.85rem;
-  width: 98%;
+  width: 100%;
 }
 footer a {
   padding: 1rem;
-  margin: 1rem;
+  margin: 1rem 0;
 }
 @media (max-width: 500px) {
   footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 1rem 0;
     margin: 1rem 0;
+  }
+  footer .footer-links,
+  footer .socials {
+    margin: 0.5rem 0;
   }
 }
 article {
@@ -234,17 +242,20 @@ body {
   font-family: 'Nunito', sans-serif;
   background-color: #403850;
 }
-body img {
+.container {
+  width: 100%;
+}
+img {
   width: 50%;
   max-height: 80%;
 }
-body h1,
-body h2,
-body h3,
-body h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: 'Lobster Two', cursive;
 }
-body h1 {
+h1 {
   color: #FFFFFF;
   font-size: 8rem;
   text-align: center;
@@ -254,40 +265,40 @@ body h1 {
   font-weight: normal;
 }
 @media (max-width: 500px) {
-  body h1 {
+  h1 {
     font-size: 5rem;
   }
 }
-body a {
+a {
   text-decoration: none;
   color: #FFFFFF;
 }
-body .container {
+.container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
 }
-body .container .cta {
+.container .cta {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
-body .container .cta p {
+.container .cta p {
   color: #FFFFFF;
   font-size: 2.4rem;
   margin: 1rem 0 1rem 0;
 }
-body .container .cta .cta-buttons {
+.container .cta .cta-buttons {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   font-size: 1.2rem;
 }
-body .container .cta .cta-buttons .cta-signup {
+.container .cta .cta-buttons .cta-signup {
   background-color: #FF6584;
   color: #FFFFFF;
   border-radius: 0.3em;
@@ -298,11 +309,11 @@ body .container .cta .cta-buttons .cta-signup {
   margin: 0 0.5rem;
 }
 @media (max-width: 500px) {
-  body .container .cta .cta-buttons .cta-signup {
+  .container .cta .cta-buttons .cta-signup {
     width: 60%;
   }
 }
-body .container .cta .cta-buttons .cta-login {
+.container .cta .cta-buttons .cta-login {
   background-color: #F8A429;
   color: #FFFFFF;
   border-radius: 0.3em;
@@ -314,12 +325,12 @@ body .container .cta .cta-buttons .cta-login {
   margin: 0 2rem;
 }
 @media (max-width: 500px) {
-  body .container .cta .cta-buttons .cta-login {
+  .container .cta .cta-buttons .cta-login {
     width: 60%;
   }
 }
 @media (max-width: 500px) {
-  body .container .cta .cta-buttons {
+  .container .cta .cta-buttons {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -327,7 +338,7 @@ body .container .cta .cta-buttons .cta-login {
     width: 80%;
   }
 }
-body .container .main-content {
+.container .main-content {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;

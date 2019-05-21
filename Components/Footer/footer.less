@@ -1,13 +1,20 @@
 footer {
     .flex(row, space-between, center);
-    .space(1rem, 1rem);
+    .space(1rem, 1rem 0);
     font-size: 0.85rem;
-    width: 98%;
+    width: 100%;
+    
 
     a {
-        .space(1rem, 1rem);
+        .space(1rem, 1rem 0);
     }
+
 @media @mobile {
+    .flex(column, center, center);
     .space(1rem 0, 1rem 0);
+
+    .footer-links, .socials {
+        margin: 0.5rem 0;
+    }
 }
 }
