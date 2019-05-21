@@ -37,6 +37,29 @@ article {
       }
     }
   }
+
+  @media @tablet {
+    article {
+      width: 100%;
+      text-align: center;
+    }
+    .article-container {
+      .flex(column, center, center);
+      width: 100%;
+      .space(6rem 0 2rem 0, 0 1rem);
+
+      .text-content {
+        text-align: center;
+        width: 100%;
+        .space(1rem 0, 0);
+      }
+    }
+  }
+  @media @mobile {
+    img {
+      display: none;
+    }
+  }
 }
 
 .svg-container-end {
