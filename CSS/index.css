@@ -47,7 +47,7 @@
   justify-content: center;
   align-items: center;
   padding: 1rem 2rem;
-  margin: 2rem 1rem;
+  margin: 1rem 1rem;
   font-size: 1rem;
   line-height: 2rem;
   border-radius: 1rem;
@@ -60,6 +60,7 @@
 @media (max-width: 1000px) and (max-width: 500px) {
   .plans-articles-container .price-plans {
     width: 80%;
+    padding: 2rem 1rem;
   }
 }
 .plans-articles-container .price-plans h2 {
