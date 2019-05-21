@@ -1,28 +1,56 @@
+.fa-bars {
+  color: @white;
+  font-size: 2rem;
+  padding: 1rem;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  @media @tablet {
+    display: block;
+  }
+}
+
 nav {
   .flex(row, space-between, baseline);
   background-color: @purple;
-  font-size: 1rem;
+  font-size: 0.9rem;
 
   a {
-    .space(1rem, 1rem);
+    .space(1rem, 0);
+    border-top: 0.3rem solid @purple;
+    width: 5rem;
+    text-align: center;
+
+    .logo {
+      font-family: @accentFont;
+      
+    }
   }
 
   .nav-links {
     .flex(row, space-between, baseline);
+   
+    a:hover {
+      border-top: 0.3rem solid @blue;
+      transition-timing-function: ease-out;
+      transition: 0.25s;
+  } 
   }
 
   .nav-links-login {
     color: @orange;
-    .space(0.5rem 2rem, 0 1rem);
+    
   }
 
   .nav-links-signup {
     color: @pink;
-    .space(0.5rem 2rem, 0 1rem);
+    
   }
 }
 
-  @media @mobile {
+  @media @tablet {
     nav {
       display: none;
     }

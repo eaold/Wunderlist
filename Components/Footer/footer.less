@@ -1,20 +1,21 @@
 footer {
-    .flex(row, space-between, center);
-    .space(1rem 0, 1rem 0);
-    font-size: 0.85rem;
-    width: 100%;
-    
+  box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  .flex(row, space-between, center);
+  .space(1rem 0, 1rem 0 0 0);
+  font-size: 0.85rem;
 
-    a {
-        .space(1rem, 1rem 0);
-    }
+  a {
+    .space(1rem, 1rem 0);
+  }
 
-@media @mobile {
+  @media @mobile {
     .flex(column, center, center);
     .space(1rem 0, 0);
 
-    .footer-links, .socials {
-        margin: 0.5rem 0;
+    .footer-links,
+    .socials {
+      margin: 0.5rem 0;
     }
-}
+  }
 }

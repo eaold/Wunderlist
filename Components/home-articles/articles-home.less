@@ -38,23 +38,26 @@ article {
     }
   }
 
-  @media @mobile {
+  @media @tablet {
     article {
       width: 100%;
-    }
-
-    img {
-      display: none;
+      text-align: center;
     }
     .article-container {
-      .space(3rem 0rem, 0 auto);
+      .flex(column, center, center);
       width: 100%;
+      .space(6rem 0 2rem 0, 0 1rem);
 
       .text-content {
-        .space(0 0.5rem, 0);
         text-align: center;
         width: 100%;
+        .space(1rem 0, 0);
       }
+    }
+  }
+  @media @mobile {
+    img {
+      display: none;
     }
   }
 }

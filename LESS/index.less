@@ -7,6 +7,7 @@
 @import "../Components/plans-articles/articles-plans.less";
 
 body {
+  box-sizing: border-box;
   font-size: 10px;
   font-family: @mainFont;
   background-color: @purple;
@@ -58,17 +59,30 @@ a {
       font-size: 2.4rem;
       margin: 1rem 0 1rem 0;
     }
-    .cta-buttons {
+
+    .cta-content {
       .flex(row, space-evenly, center);
+
+      @media @mobile {
+        .flex(column, center, center);
+      }
+    }
+    .cta-buttons {
+      .flex(column, center, center);
       font-size: 1.2rem;
+      width: 49%;
+      button {
+        width: 60%;
+        margin: 1rem 0;
+      }
+
       .cta-signup {
         .button-style(@pink, @white);
-        margin: 0 0.5rem;
+  
       }
       .cta-login {
         .button-style(@orange, @white);
-        width: 6rem;
-        margin: 0 2rem;
+       
       }
       @media @mobile {
         .flex(column, center, center);
