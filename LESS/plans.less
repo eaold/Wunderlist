@@ -11,7 +11,7 @@
   img {
       position: absolute;
       bottom: 0;
-      pointer-events: none;
+      pointer-events: none;  // image is clickthough so as not to cause problems with adjacent button.
   }
 
   .plans-intro {
@@ -25,6 +25,10 @@
 .plans-articles-container {
   .flex(row, space-evenly, center);
   padding-bottom: 4rem;
+
+  @media @tablet {
+      flex-wrap: wrap
+  }
  
   @media @mobile {
       .flex(column, center, center);
@@ -35,6 +39,10 @@
       font-size: 1rem;
       line-height: 2rem;
       border-radius: 1rem;
+
+      @media @tablet {
+        width: 35%;
+    }
 
       h2 {
           font-size: 2rem;

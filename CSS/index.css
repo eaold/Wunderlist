@@ -28,6 +28,11 @@
   align-items: center;
   padding-bottom: 4rem;
 }
+@media (max-width: 1000px) {
+  .plans-articles-container {
+    flex-wrap: wrap;
+  }
+}
 @media (max-width: 500px) {
   .plans-articles-container {
     display: flex;
@@ -46,6 +51,11 @@
   font-size: 1rem;
   line-height: 2rem;
   border-radius: 1rem;
+}
+@media (max-width: 1000px) {
+  .plans-articles-container .price-plans {
+    width: 35%;
+  }
 }
 .plans-articles-container .price-plans h2 {
   font-size: 2rem;
@@ -201,7 +211,7 @@ article .article-container .text-content {
 article .article-container .text-content h3 {
   font-size: 2.5rem;
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   article article {
     width: 100%;
     text-align: center;
@@ -318,7 +328,7 @@ article[data-article="4"] button {
   top: 0;
   left: 0;
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .fa-bars {
     display: block;
   }
@@ -358,7 +368,7 @@ nav .nav-links-login {
 nav .nav-links-signup {
   color: #FF6584;
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   nav {
     display: none;
   }
