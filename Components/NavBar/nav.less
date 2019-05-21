@@ -1,73 +1,74 @@
 .fa-bars {
-  color: @white;
-  font-size: 2rem;
-  padding: 1rem;
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
+	color: @white;
+	font-size: 2rem;
+	padding: 1rem;
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
 
-  @media @tablet {
-    display: block;
-  }
+	@media @tablet {
+		display: block;
+	}
 }
 
 nav {
-  .flex(row, space-between, baseline);
-  background-color: @purple;
-  font-size: 0.9rem;
+	.flex(row, space-between, baseline);
+	background-color: @purple;
+	font-size: 0.9rem;
 
-  a {
-    .space(1rem, 0);
-    border-top: 0.3rem solid @purple;
-    width: 5rem;
-    text-align: center;
+	a {
+		.space(1rem, 0);
+		border-top: 0.3rem solid @purple;
+		width: 5rem;
+		text-align: center;
 
-    .logo {
-      font-family: @accentFont;
-    }
-  }
 
-  .nav-links {
-    .flex(row, space-between, baseline);
+		.logo {
+			font-family: @accentFont;
+		}
+	}
 
-    a:hover {
-      border-top: 0.3rem solid @blue;
-      transition-timing-function: ease-out;
-      transition: 0.25s;
-    }
-  }
+	.nav-links {
+		.flex(row, space-between, baseline);
 
-  .nav-links-login {
-    color: @orange;
-  }
+		a:hover {
+			border-top: 0.3rem solid @blue;
+			transition-timing-function: ease-out;
+			transition: 0.25s;
+		}
+	}
 
-  .nav-links-signup {
-    color: @pink;
-  }
+	.nav-links-login {
+		color: @orange;
+	}
+
+	.nav-links-signup {
+		color: @pink;
+	}
 }
 
 @media @tablet {
-  nav {
+	nav {
     .flex(column, center, center);
     display: none;
 
+		.nav-links {
+			.flex(column, center, center);
+		}
+		.nav-links-buttons {
+			.flex(column, center, center);
+		}
+		.nav-links-login {
+			.space(0.5rem 2.5rem, 1rem);
+			width: 60%;
+			text-align: center;
+		}
+		.nav-links-signup {
+			.space(0.5rem 2.5rem, 1rem);
+			width: 60%;
+			text-align: center;
+		}
+	}
 
-    .nav-links {
-      .flex(column, center, center);
-    }
-    .nav-links-buttons {
-      .flex(column, center, center);
-    }
-    .nav-links-login {
-      .space(0.5rem 2.5rem, 1rem);
-      width: 60%;
-      text-align: center;
-    }
-    .nav-links-signup {
-      .space(0.5rem 2.5rem, 1rem);
-      width: 60%;
-      text-align: center;
-    }
-  }
 }
