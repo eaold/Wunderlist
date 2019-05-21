@@ -57,6 +57,11 @@
     width: 35%;
   }
 }
+@media (max-width: 1000px) and (max-width: 500px) {
+  .plans-articles-container .price-plans {
+    width: 80%;
+  }
+}
 .plans-articles-container .price-plans h2 {
   font-size: 2rem;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -370,31 +375,31 @@ nav .nav-links-signup {
 }
 @media (max-width: 1000px) {
   nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     display: none;
   }
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  .nav-links {
+  nav .nav-links {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .nav-links-buttons {
+  nav .nav-links-buttons {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .nav-links-login {
+  nav .nav-links-login {
     padding: 0.5rem 2.5rem;
     margin: 1rem;
     width: 60%;
     text-align: center;
   }
-  .nav-links-signup {
+  nav .nav-links-signup {
     padding: 0.5rem 2.5rem;
     margin: 1rem;
     width: 60%;
@@ -433,6 +438,9 @@ h1 {
   h1 {
     font-size: 5rem;
   }
+  h1 h1 {
+    font-size: 5rem;
+  }
 }
 a {
   text-decoration: none;
@@ -455,6 +463,11 @@ a {
   color: #FFFFFF;
   font-size: 2.4rem;
   margin: 1rem 0 1rem 0;
+}
+@media (max-width: 1000px) {
+  .container .cta p {
+    font-size: 1.6rem;
+  }
 }
 .container .cta .cta-content {
   display: flex;
