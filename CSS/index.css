@@ -537,6 +537,11 @@ a {
   justify-content: space-evenly;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .container .cta {
+    width: 100%;
+  }
+}
 .container .cta p {
   color: #FFFFFF;
   font-size: 2.4rem;
@@ -559,6 +564,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
   }
 }
 .container .cta .cta-buttons {
