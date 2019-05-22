@@ -30,7 +30,7 @@
 	}
 
 	@media @mobile {
-		.flex(column, center, center);
+		//	.flex(column, center, center);
 	}
 	.price-plans {
 		.flex(column, center, center);
@@ -46,6 +46,11 @@
 			@media @mobile {
 				width: 80%;
 				padding: 2rem 1rem;
+				display: none;
+
+				&.active {
+					.flex(column, center, center);
+				}
 			}
 		}
 
@@ -90,5 +95,13 @@
 
 	button {
 		.button-style(@purple, @white);
+	}
+}
+
+.carousel {
+	display: none;
+
+	@media @mobile {
+        display: block;
 	}
 }

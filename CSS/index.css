@@ -355,12 +355,6 @@ nav .nav-links-signup {
   }
 }
 @media (max-width: 500px) {
-  .plans-articles-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
 }
 .plans-articles-container .price-plans {
   display: flex;
@@ -372,6 +366,7 @@ nav .nav-links-signup {
   font-size: 1rem;
   line-height: 2rem;
   border-radius: 1rem;
+  border: 0.2rem solid #1EC0B8;
 }
 @media (max-width: 1000px) {
   .plans-articles-container .price-plans {
@@ -382,6 +377,13 @@ nav .nav-links-signup {
   .plans-articles-container .price-plans {
     width: 80%;
     padding: 2rem 1rem;
+    display: none;
+  }
+  .plans-articles-container .price-plans.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 .plans-articles-container .price-plans h2 {
@@ -392,11 +394,11 @@ nav .nav-links-signup {
   width: 80%;
   margin: 3rem 0 1rem 0;
 }
-.price-plans[data-plans="1"] {
+.price-plans[data-plans='1'] {
   background-color: #403850;
   color: #FFFFFF;
 }
-.price-plans[data-plans="1"] button {
+.price-plans[data-plans='1'] button {
   background-color: #FFFFFF;
   color: #403850;
   border-radius: 0.3em;
@@ -406,15 +408,15 @@ nav .nav-links-signup {
   cursor: pointer;
 }
 @media (max-width: 500px) {
-  .price-plans[data-plans="1"] button {
+  .price-plans[data-plans='1'] button {
     width: 60%;
   }
 }
-.price-plans[data-plans="2"] {
+.price-plans[data-plans='2'] {
   background-color: #F8A429;
   color: #FFFFFF;
 }
-.price-plans[data-plans="2"] button {
+.price-plans[data-plans='2'] button {
   background-color: #FFFFFF;
   color: #F8A429;
   border-radius: 0.3em;
@@ -424,15 +426,15 @@ nav .nav-links-signup {
   cursor: pointer;
 }
 @media (max-width: 500px) {
-  .price-plans[data-plans="2"] button {
+  .price-plans[data-plans='2'] button {
     width: 60%;
   }
 }
-.price-plans[data-plans="3"] {
+.price-plans[data-plans='3'] {
   background-color: #FF6584;
   color: #FFFFFF;
 }
-.price-plans[data-plans="3"] button {
+.price-plans[data-plans='3'] button {
   background-color: #FFFFFF;
   color: #FF6584;
   border-radius: 0.3em;
@@ -442,15 +444,15 @@ nav .nav-links-signup {
   cursor: pointer;
 }
 @media (max-width: 500px) {
-  .price-plans[data-plans="3"] button {
+  .price-plans[data-plans='3'] button {
     width: 60%;
   }
 }
-.price-plans[data-plans="4"] {
+.price-plans[data-plans='4'] {
   background-color: #FFFFFF;
   color: #403850;
 }
-.price-plans[data-plans="4"] button {
+.price-plans[data-plans='4'] button {
   background-color: #403850;
   color: #FFFFFF;
   border-radius: 0.3em;
@@ -460,8 +462,16 @@ nav .nav-links-signup {
   cursor: pointer;
 }
 @media (max-width: 500px) {
-  .price-plans[data-plans="4"] button {
+  .price-plans[data-plans='4'] button {
     width: 60%;
+  }
+}
+.carousel {
+  display: none;
+}
+@media (max-width: 500px) {
+  .carousel {
+    display: block;
   }
 }
 body {
