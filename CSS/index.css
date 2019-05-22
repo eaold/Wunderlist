@@ -336,9 +336,6 @@ article[data-article='4'] button {
 .features h3 {
   color: #F8A429;
 }
-.features .feature {
-  border-radius: 1rem;
-}
 .features .feature .title {
   background-color: #1EC0B8;
   color: #FFFFFF;
@@ -355,6 +352,7 @@ article[data-article='4'] button {
   font-size: 1rem;
   padding: 1rem;
   margin: 0;
+  display: none;
 }
 .fa-bars {
   color: #FFFFFF;
