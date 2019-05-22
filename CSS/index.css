@@ -474,6 +474,11 @@ nav .nav-links-signup {
     display: block;
   }
 }
+@media (max-width: 500px) {
+  img {
+    display: none;
+  }
+}
 body {
   box-sizing: border-box;
   font-size: 10px;
