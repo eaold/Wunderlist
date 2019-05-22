@@ -35,6 +35,7 @@ class Carousel {
     this.container = container;
     this.active();
     const swipeFn = new Hammer(container);
+    swipeFn.set(new Hammer.Swipe({ threshold: 1 }));
     swipeFn.on('swipeleft', this.swipeLeft.bind(this));
     swipeFn.on('swiperight', this.swipeRight.bind(this));
   }
