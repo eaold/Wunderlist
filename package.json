@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/EmilyAbrahart/Wunderlist#readme",
   "dependencies": {
+    "hammerjs": "^2.0.8",
     "less": "^3.9.0",
     "less-watch-compiler": "^1.13.0"
   },

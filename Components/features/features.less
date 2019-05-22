@@ -1,0 +1,57 @@
+.features {
+	width: 70%;
+	margin: 0 auto;
+	margin-bottom: 2rem;
+	text-align: center;
+	color: white;
+	.flex(column, center, center);
+
+
+	@media @tablet {
+		width: 100%;
+		padding: 1rem 0;
+
+		.feature {
+			width: 98%;
+    }
+    
+    .title {
+      font-size: 1rem;
+    }
+
+		.feature-content {
+			padding: 0;
+		}
+	}
+
+	h3 {
+		color: @white;
+		text-shadow: @shadow;
+		margin: 0 0 1rem 0;
+	}
+
+	.feature {
+		width: 90%;
+		border-radius: 1rem;
+
+		.title {
+			.colors(@blue, @white);
+			text-shadow: @shadow;
+			box-shadow: @shadow;
+			margin: 0;
+			padding: 0.5rem;
+			cursor: pointer;
+			font-family: @mainFont;
+			border-bottom: 0.1rem solid @purple;
+			
+		}
+
+		.feature-content {
+			.colors(@white, @purple);
+			font-size: 1rem;
+			padding: 1rem;
+			margin: 0;
+			display: none;
+		}
+	}
+}
