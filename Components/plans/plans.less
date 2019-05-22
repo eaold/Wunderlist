@@ -1,0 +1,94 @@
+.plans-container {
+	.colors(@blue, @white);
+	.flex(column, center, center);
+	position: relative;
+
+	h1 {
+		font-size: 3.5rem;
+	}
+
+	img {
+		position: absolute;
+		bottom: 0;
+		pointer-events: none; // image is clickthough so as not to cause problems with adjacent button.
+	}
+
+	.plans-intro {
+		font-size: 1.2rem;
+		padding: 1rem 3rem;
+		line-height: 1.5rem;
+		text-align: center;
+	}
+}
+
+.plans-articles-container {
+	.flex(row, space-evenly, center);
+	padding-bottom: 4rem;
+
+	@media @tablet {
+		flex-wrap: wrap;
+	}
+
+	@media @mobile {
+		.flex(column, center, center);
+	}
+	.price-plans {
+		.flex(column, center, center);
+		.space(1rem 2rem, 1rem 1rem);
+		font-size: 1rem;
+		line-height: 2rem;
+		border-radius: 1rem;
+		border: 0.2rem solid @blue;
+
+		@media @tablet {
+			width: 35%;
+
+			@media @mobile {
+				width: 80%;
+				padding: 2rem 1rem;
+			}
+		}
+
+		h2 {
+			font-size: 2rem;
+			text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		}
+
+		button {
+			width: 80%;
+			margin: 3rem 0 1rem 0;
+		}
+	}
+}
+
+.price-plans[data-plans='1'] {
+	.colors(@purple, @white);
+
+	button {
+		.button-style(@white, @purple);
+	}
+}
+
+.price-plans[data-plans='2'] {
+	.colors(@orange, @white);
+
+	button {
+		.button-style(@white, @orange);
+	}
+}
+
+.price-plans[data-plans='3'] {
+	.colors(@pink, @white);
+
+	button {
+		.button-style(@white, @pink);
+	}
+}
+
+.price-plans[data-plans='4'] {
+	.colors(@white, @purple);
+
+	button {
+		.button-style(@purple, @white);
+	}
+}
