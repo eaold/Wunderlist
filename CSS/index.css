@@ -347,7 +347,7 @@ nav .nav-links-signup {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: baseline;
   padding-bottom: 4rem;
 }
 @media (max-width: 1000px) {
@@ -355,12 +355,10 @@ nav .nav-links-signup {
     flex-wrap: wrap;
   }
 }
-@media (max-width: 500px) {
-}
 .plans-articles-container .price-plans {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
   margin: 1rem 1rem;
@@ -368,6 +366,8 @@ nav .nav-links-signup {
   line-height: 2rem;
   border-radius: 1rem;
   border: 0.2rem solid #1EC0B8;
+  width: 20%;
+  min-height: 700px;
 }
 @media (max-width: 1000px) {
   .plans-articles-container .price-plans {
@@ -394,6 +394,11 @@ nav .nav-links-signup {
 .plans-articles-container .price-plans button {
   width: 80%;
   margin: 3rem 0 1rem 0;
+}
+.plans-articles-container .price-plans .cost {
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .price-plans[data-plans='1'] {
   background-color: #403850;

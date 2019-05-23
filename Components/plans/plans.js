@@ -1,4 +1,5 @@
 /* eslint-disable no-plusplus */
+
 class Plan {
   constructor(planElement) {
     this.planElement = planElement;

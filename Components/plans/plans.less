@@ -22,23 +22,22 @@
 }
 
 .plans-articles-container {
-	.flex(row, space-evenly, center);
+	.flex(row, space-evenly, baseline);
 	padding-bottom: 4rem;
 
 	@media @tablet {
 		flex-wrap: wrap;
 	}
 
-	@media @mobile {
-		//	.flex(column, center, center);
-	}
 	.price-plans {
-		.flex(column, center, center);
+		.flex(column, space-between, center);
 		.space(1rem 2rem, 1rem 1rem);
 		font-size: 1rem;
 		line-height: 2rem;
 		border-radius: 1rem;
 		border: 0.2rem solid @blue;
+		width: 20%;
+		min-height: 700px;
 
 		@media @tablet {
 			width: 35%;
@@ -56,12 +55,18 @@
 
 		h2 {
 			font-size: 2rem;
-			text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+			text-shadow: @shadow;
 		}
 
 		button {
 			width: 80%;
 			margin: 3rem 0 1rem 0;
+		}
+
+		.cost {
+			font-size: 1.6rem;
+			font-weight: bold;
+			text-shadow: @shadow;
 		}
 	}
 }
@@ -107,7 +112,7 @@
 }
 
 @media @mobile {
-    img {
-        display: none;
-    }
+	img {
+		display: none;
+	}
 }
