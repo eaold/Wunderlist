@@ -63,6 +63,9 @@ a {
 
 	.cta {
 		.flex(column, space-evenly, center);
+		@media @mobile {
+			width: 100%;
+		}
 
 		p {
 			color: @white;
@@ -79,6 +82,7 @@ a {
 
 			@media @mobile {
 				.flex(column, center, center);
+				width: 100%;
 			}
 		}
 		.cta-buttons {

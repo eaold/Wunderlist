@@ -243,8 +243,9 @@ article[data-article='4'] button {
   padding: 1rem;
   display: none;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 1rem;
+  left: 1rem;
+  z-index: 10;
 }
 @media (max-width: 1000px) {
   .fa-bars {
@@ -537,6 +538,11 @@ a {
   justify-content: space-evenly;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .container .cta {
+    width: 100%;
+  }
+}
 .container .cta p {
   color: #FFFFFF;
   font-size: 2.4rem;
@@ -559,6 +565,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
   }
 }
 .container .cta .cta-buttons {
